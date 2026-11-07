@@ -32,5 +32,7 @@ print(f"Marriage values: {df['MARRIAGE'].unique()}")
 print(f"Shape: {df.shape}")
 print(f"Columns: {list(df.columns)}")
 
+PROCESSED_DATA_DIR.mkdir(parents=True, exist_ok=True)
+
 #Creating new file
 df.to_csv(OUTPUT_PATH, index=False)
